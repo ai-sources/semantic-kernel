@@ -6,7 +6,9 @@ name: "CodeQL"
 
 on:
   push:
-    branches: ["main", "experimental*", "feature*", "*-development"]
+    # Do not run this workflow for now
+    branches: ["none"]
+    #branches: ["main", "experimental*", "feature*", "*-development"]
   schedule:
     - cron: "17 11 * * 2"
 
